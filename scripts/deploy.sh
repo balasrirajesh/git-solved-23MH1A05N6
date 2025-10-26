@@ -1,26 +1,4 @@
 #!/bin/bash
-<<<<<<< HEAD
-# Production Deployment Script
-# Version: 1.0.0
-
-set -e
-
-echo "====================================="
-echo "DevOps Simulator - Production Deploy"
-echo "====================================="
-
-# Configuration
-DEPLOY_ENV="production"
-DEPLOY_REGION="us-east-1"
-APP_PORT=8080
-
-echo "Environment: $DEPLOY_ENV"
-echo "Region: $DEPLOY_REGION"
-echo "Port: $APP_PORT"
-
-# Pre-deployment checks
-echo "Running pre-deployment checks..."
-=======
 # Experimental Deployment Script with AI
 # Version: 3.0.0-experimental
 
@@ -51,24 +29,11 @@ fi
 
 # Pre-deployment checks
 echo "Running advanced pre-deployment checks..."
->>>>>>> origin/conflict-simulator
 if [ ! -f "config/app-config.yaml" ]; then
     echo "Error: Configuration file not found!"
     exit 1
 fi
 
-<<<<<<< HEAD
-# Deploy application
-echo "Starting deployment..."
-echo "Pulling latest Docker images..."
-# docker pull devops-simulator:latest
-
-echo "Rolling update strategy initiated..."
-# kubectl rolling-update devops-simulator
-
-echo "Deployment completed successfully!"
-echo "Application available at: https://app.example.com"
-=======
 # Validate multi-cloud configuration
 for cloud in "${DEPLOY_CLOUDS[@]}"; do
     echo "Validating $cloud configuration..."
@@ -111,4 +76,3 @@ echo "Experimental deployment completed!"
 echo "AI Dashboard: https://ai.example.com"
 echo "Multi-Cloud Status: https://clouds.example.com"
 echo "================================================"
->>>>>>> origin/conflict-simulator
